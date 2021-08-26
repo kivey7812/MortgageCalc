@@ -13,10 +13,9 @@ app.use(express.static("Public"));
 
 
 
-//quotes API key:  QVg8O5A2lFJtePWMec_vQQeF
 app.get("/", function(req,res){
   //takes a random quote from my private collection on quotes.rest
-  var url = "https://quotes.rest/quote/search?private=true&limit=1&api_key=QVg8O5A2lFJtePWMec_vQQeF"
+  var url = "https://quotes.rest/quote/search?private=true&limit=1&api_key="+apikey
   https.get(url, function(response){
     console.log(response.statusCode);
     response.on("data", function(data){
