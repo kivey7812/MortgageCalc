@@ -1,0 +1,159 @@
+html, body{
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #EEEEEE;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+h1, h2{
+  font-family: 'Exo', sans-serif;
+}
+
+p{
+  padding: 1%;
+}
+.wrapper{
+  min-height: 100%;
+  /* equal to height of footer */
+  margin-bottom: -50px;
+}
+.header-area{
+  background-color: #393E46;
+  display: flex;
+  padding: 2%;
+}
+
+.header-area h1{
+  margin: auto auto auto 3%;
+  color: #C4FB6D;
+  font-size: 3em;
+  letter-spacing: 4px;
+  align-items: flex-start;
+}
+.header-area .icon{
+  transform: rotate(15deg);
+  color: #EEEEEE;
+  font-size: 3em;
+  float: left;
+}
+
+.info{
+  width: 50%;
+  padding-left: 2%;
+  margin: 2% auto 2% 3%;
+  text-shadow: 1px 1px 4px #C4FB6D;
+}
+.main{
+  display: flex;
+  margin: 2% auto auto auto;
+  width: 70%;
+}
+.calculator-section{
+  background-color: inherit;
+  height: auto;
+  margin-left: 7%;
+  flex: 1;
+  font-size: 1.5em;
+}
+.quote-container{
+  padding: 10px;
+  background-color: white;
+  border-radius: 15px;
+  opacity: 50%;
+  flex: 1;
+  text-align: center;
+  position: relative;
+  diplay: flex;
+  margin-bottom: 5%;
+}
+.home-icon{
+  position: absolute;
+  font-size: 14.5vw;
+  z-index: -1;
+  color: #76EAD7;
+  padding: 0;
+  margin: 0 auto 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.quote{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2em;
+  z-index: 1;
+}
+
+.results{
+  margin: auto;
+  width: 80%;
+  display: flex;
+  font-size: 1.1em;
+}
+button{
+  font-size: 1.5em;
+  font-family: 'Exo', sans-serif;
+  color: black;
+  background-color: #C4FB6D;
+  border-style: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button:hover{
+  box-shadow: 0 0 10px black;
+}
+li:not(:last-child) {
+    margin-bottom: 10%;
+}
+#chart_div{
+  float: right;
+}
+.link{
+  display: block;
+  width: 100%;
+  margin-top: 5%;
+  margin-left: 10%;
+
+}
+.link a {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #C4FB6D;
+  opacity: 50%;
+  color: black;
+}
+.link a:hover {
+  box-shadow: 0 0 10px black;
+  color: black;
+}
+.push{
+  height: 50px;
+}
+.footer{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #76EAD7;
+  font-size: .7em;
+  color: white;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+
+   opacity: 1;
+
+}
+
+@media (max-width: 768px){
+  .home-icon{
+    font-size: 8em;
+  }
+}

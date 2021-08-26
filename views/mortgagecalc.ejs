@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mortgage Calculator</title>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Andada+Pro&family=Exo:wght@900&family=Noto+Sans+JP:wght@300&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+  <!-- enables icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <!-- custom style sheet -->
+  <link rel="stylesheet" href="mortg-styles.css">
+  <!-- jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- header area -->
+    <div class="header-area">
+      <div class="icon">
+        <i class="fas fa-calculator"></i>
+      </div>
+      <h1>Mortgage Calculator</h1>
+
+    </div>
+
+
+    <!-- main body -->
+
+    <div class="info">
+      <h2>Estimate your mortgage payments and interest with this easy to use calculator!</h2>
+    </div>
+
+    <div class="main">
+
+
+      <div class="calculator-section">
+
+        <form class="" action="/results" method="post">
+          <p>
+            <label for="homePrice">Home Price:</label>
+            <input type="number" placeholder="$500,000" name="homePrice" min="0" value="">
+          </p>
+
+          <p>
+            <label for="rate">Interest rate: </label>
+            <input type="float" name="rate" value="3.5" min="0">
+          </p>
+
+          <p>
+            <label for="downPayment">Down Payment:</label>
+            <input type="number" name="downPayment" min="0"  placeholder="$100,000" value="">
+          </p>
+
+          <button class="" type="submit" name="submitButton">Submit</button>
+        </form>
+
+
+      </div>
+
+<div class="quote-container">
+  <div class="home-icon">
+        <i class="fas fa-home"></i>
+  </div>
+  <div class="quote">
+    <p>"<%= quote %>"  </p>
+    <p>- <%= author %></p>
+  </div>
+
+</div>
+
+
+    </div>
+
+
+    <div class="push">
+
+    </div>
+  </div>
+  <footer class="footer">
+    <p>Created by Kirsten Ivey 2021</p>
+  </footer>
+
+    <!-- custom js -->
+  <script src="mortJs2.js" charset="utf-8"></script>
+</body>
+
+</html>
